@@ -84,3 +84,23 @@ function countChar(input, filter) {
 
 console.log(countBs("BOB"));
 console.log(countChar("kakkerlak", "k"));
+
+// Chapter 2
+//================================
+// exercise 1
+function range(min, max, step = 1) {
+  let arr = [];
+  for (let i = 0; i < max; i += step) {
+    arr.push(i);
+  }
+  return arr;
+}
+console.log(range(1, 10, 3));
+
+function sum(data) {
+  let sum = 0;
+  for (n of data) {
+    sum += n;
+  }
+  return sum;
+}
